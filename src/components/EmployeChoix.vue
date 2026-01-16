@@ -1,6 +1,6 @@
 <template>
 <div>
-    <h3>Ajout d'employes avec droit de signature pour le service<br>{{ lesDatas.descriptionService }}</h3>
+    <h3>Ajout d'employes avec droit d'édition pour le service<br>{{ lesDatas.descriptionService }}</h3>
     <input type="text" v-model="state.critere" v-on:keyup="listeEmployes" placeholder="- nom pr&eacute;nom login -">&nbsp;
     <input type="checkbox" id="chkRetInactif" v-model="state.bRetInactif" v-on:change="listeEmployes"><label for="chkRetInactif">avec les employ&eacute;s d&eacute;sactiv&eacute;s</label>
     <ul>
